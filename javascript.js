@@ -10,7 +10,7 @@ messagingSenderId: "31849461683"
 };
 firebase.initializeApp(config);
 
-
+moment().format();
 
 
 }); //end documet werapper
