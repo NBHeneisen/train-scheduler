@@ -8,11 +8,68 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="jquery-3.1.1.min.js"></script>
-    <link>
-    <script></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="javascript.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+    <title>Kartma Train Schedule</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="row">
+            <div class="jumbotron">
+                <h1>KARTMA</h1>
+                <h2>Train Schedule</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Current Train Schedule</h3>
+            </div>
+            <div class="panel-body">
+                <table class="table table-hover table-condensed">
+                    <thead>
+                        <tr>
+                            <th>Train Name</th>
+                            <th>Destination</th>
+                            <th>Frequency</th>
+                            <th>Next Arrival</th>
+                            <th>Minutes Away</th>
+                        </tr>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="panel-heading"> 
+                    <h3 class="panel-title">Add New Train Schedule here</h3>
+                </div>
+                <div class="panel-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="trainName">Train Name</label>
+                            <input type="text" class="form-control" id="trainName" placeholder="Train Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="destination">Destination</label>
+                            <input type="text" class="form-control" id="destination" placeholder="Destination">
+                        </div>
+                        <div class="form-group">
+                            <label for="firstTime">First Train Time</label>
+                            <input type="text" class="form-control" id="firstTime" placeholder="(HH:mm - military time)">
+                        </div>
+                        <div class="form-group">
+                            <label for="frequency">Frequency in Minutes</label>
+                            <input type="number" class="form-control" id="frequency" placeholder="ex: 30">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
